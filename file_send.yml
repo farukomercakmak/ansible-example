@@ -1,0 +1,8 @@
+---
+-  hosts: all
+   tasks:
+    - name: Betik Gönderiliyor
+      copy: src=/tmp/test.sh dest=/home/pardus mode=0777
+
+    - name: Betik Çalıştırılıyor
+      command: sh /home/pardus/test.sh
